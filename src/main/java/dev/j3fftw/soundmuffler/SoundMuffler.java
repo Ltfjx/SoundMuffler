@@ -27,7 +27,7 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
         }*/
 
         SOUND_MUFFLER = new Category(new NamespacedKey(this, "sound_muffler"),
-            new CustomItem(Material.BEACON, "&7靜音羊毛", "", "&a> 點擊開啟"));
+            new CustomItem(Material.BEACON, "&7静音羊毛", "", "&a> 单击打开"));
 
         new SoundMufflerListener(this).start();
 
@@ -35,7 +35,7 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
         soundMufflerMachine.register(this);
 
         new Research(new NamespacedKey(this, "sound_muffler"),
-            6912, "靜音羊毛", 11)
+            6912, "静音羊毛", 11)
             .addItems(soundMufflerMachine.getItem())
             .register();
     }
@@ -48,6 +48,6 @@ public class SoundMuffler extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/xMikux/SoundMuffler/issues";
+        return "https://github.com/Ltfjx/SoundMuffler/issues";
     }
 }
